@@ -2,6 +2,7 @@
 
 Licensed under the [GNU General Public License, version 3. (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.html)
 
+This apply to a set of images picturing the same content, but that may have been altered or resized in a various way.
 Based on following ideas to measure _image sharpness_ and _image noise_ of a set of images and compare their relatives quality.
 
 ## [Image sharpness](https://photo.stackexchange.com/a/117823/104580)
@@ -39,6 +40,6 @@ Output is a one line json string with the following format:
 
 where _sharpness_ is relative to other images in the list, same for _noise_.
 
-This information gives qualitative metrics one can use to estimate the quality of images in the list,
+This information gives qualitative metrics one can use to estimate the quality of the underlying image data,
 without relying only on the dimension of the images or their file size.
 
