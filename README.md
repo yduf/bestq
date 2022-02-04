@@ -13,17 +13,18 @@ Image sharpness is evaluated by resizing all images to the bigger size & re-comp
 Image noise is evaluated per image without resizing the image using a laplacian filter.
 More detail and improved approach can be found in [1](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.1644&rep=rep1&type=pdf).
 
-- [\[1\]](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.1644&rep=rep1&type=pdf)
+- [\[1\]](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.1644&rep=rep1&type=pdf) - A Fast Method For Image Noise Estimation Using
+Laplacian Operator and Adaptive Edge Detection / Shen-Chuan Tai , Shih-Ming Yang
 
 ## Usage
 
-{% highlight bash %}
+```bash
 $ ./bestq images/*
-{% endhighlight %}
+```
 
 Output is a one line json string with the following format:
 
-{% highlight json %}
+```json
 [ // array of results
     {
         "file": "/path/to/image.jpg",     
@@ -34,7 +35,7 @@ Output is a one line json string with the following format:
     },
 ...
 ]
-{% endhighlight %}
+```
 
 where sharpness is relative to other images in the list, same for noise.
 
