@@ -37,7 +37,7 @@ Output is a one line json string with the following format:
 ]
 ```
 
-where sharpness is relative to other images in the list, same for noise.
+where _sharpness_ is relative to other images in the list, same for _noise_.
 
 This information gives qualitative metrics one can use to estimate the quality of images in the list,
 without relying only on the dimension of the images or their file size.
